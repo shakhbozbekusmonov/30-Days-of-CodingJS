@@ -1,4 +1,4 @@
-# 30-Days-of-CodingBat
+
 # 30 Days of CodingBat TypeScript Challenge
 
 Welcome to the 30 Days of CodingBat TypeScript Challenge! This challenge is designed to help you improve your TypeScript coding skills by solving a variety of programming problems on CodingBat over the course of 30 days.
