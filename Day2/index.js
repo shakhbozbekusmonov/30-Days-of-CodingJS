@@ -7,8 +7,17 @@
 function monkeyTrouble(aSmile, bSmile) {
     return (aSmile && bSmile) || (!aSmile && !bSmile);
 }
-console.log(monkeyTrouble(true, true)); // true
-console.log(monkeyTrouble(false, false)); // true
-console.log(monkeyTrouble(true, false)); // false
-console.log(monkeyTrouble(false, true)); // false
+// console.log(monkeyTrouble(true, true)); // true
+// console.log(monkeyTrouble(false, false)); // true
+// console.log(monkeyTrouble(true, false)); // false
+// console.log(monkeyTrouble(false, true)); // false
+// sumDouble(1, 2) → 3
+// sumDouble(3, 2) → 5
+// sumDouble(2, 2) → 8
+function sumDouble(a, b) {
+    return a === b ? (a + b) * 2 : a + b;
+}
+console.log(sumDouble(1, 2)); // 3
+console.log(sumDouble(3, 2)); // 5
+console.log(sumDouble(2, 2)); // 8
 //# sourceMappingURL=index.js.map
