@@ -15,6 +15,22 @@ Welcome to the 30 Days of CodingBat TypeScript Challenge! This challenge is desi
 - **Skill Improvement**: Enhance your TypeScript programming skills by tackling a wide range of problems.
 - **Community Interaction**: Share your solutions, discuss approaches, and help others in the community.
 
+This repository contains my solutions to the daily challenges. Feel free to use them as a reference or compare your solutions.
+
+## Solutions
+
+Here are the solutions to each day's challenge:
+
+- [Day 1: Problem Title](Day1/)
+- [Day 2: Problem Title](Day2/)
+- [Day 3: Problem Title](Day3/)
+- [Day 4: Problem Title](Day4/)
+- [Day 5: Problem Title](Day5/)
+- ...
+- [Day 30: Problem Title](Day30/)
+
+Each day's folder contains a JavaScript file with the solution, along with any necessary input files or additional resources.
+
 ## Getting Started
 
 ### Prerequisites
