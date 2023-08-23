@@ -29,3 +29,16 @@ function sumDouble(a: number, b: number): number {
 // console.log(sumDouble(2, 2)) // 8
 
 // -------------------------------------
+
+// diff21(19) → 2
+// diff21(10) → 11
+// diff21(21) → 0
+
+function diff21(n: number): number {
+    return n > 21 ? Math.abs(n - 21) * 2 : Math.abs(n - 21);
+}
+
+console.log(diff21(19)); // 2
+console.log(diff21(10)); // 11
+console.log(diff21(21)); // 0
+console.log(diff21(23)); // 4
