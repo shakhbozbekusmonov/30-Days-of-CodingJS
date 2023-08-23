@@ -38,7 +38,24 @@ function diff21(n: number): number {
     return n > 21 ? Math.abs(n - 21) * 2 : Math.abs(n - 21);
 }
 
-console.log(diff21(19)); // 2
-console.log(diff21(10)); // 11
-console.log(diff21(21)); // 0
-console.log(diff21(23)); // 4
+// console.log(diff21(19)); // 2
+// console.log(diff21(10)); // 11
+// console.log(diff21(21)); // 0
+// console.log(diff21(23)); // 4
+
+// -------------------------------------
+
+// parrotTrouble(true, 6) → true
+// parrotTrouble(true, 7) → false
+// parrotTrouble(false, 6) → false
+
+function parrotTrouble(talking: boolean, hour: number): boolean {
+    return talking && (hour < 7 || hour > 20);
+}
+
+// console.log(parrotTrouble(true, 6)); // true
+// console.log(parrotTrouble(true, 7)); // false
+// console.log(parrotTrouble(false, 6)); // false
+// console.log(parrotTrouble(true, 21)); // true
+
+// --------------- End -------------------
