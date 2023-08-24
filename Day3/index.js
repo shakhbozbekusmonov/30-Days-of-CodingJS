@@ -18,7 +18,20 @@ function makes10(a, b) {
 function nearHundred(n) {
     return Math.abs(n - 100) <= 10 || Math.abs(n - 200) <= 10;
 }
-console.log(nearHundred(93)); // true
-console.log(nearHundred(90)); // true
-console.log(nearHundred(89)); // false
+// console.log(nearHundred(93)); // true
+// console.log(nearHundred(90)); // true
+// console.log(nearHundred(89)); // false
+// ------------------------------------
+// posNeg(1, -1, false) → true
+// posNeg(-1, 1, false) → true
+// posNeg(-4, -5, true) → true
+function posNeg(a, b, negative) {
+    return ((a < 0 && b > 0) ||
+        (a > 0 && b < 0 && !negative) ||
+        (a < 0 && b < 0 && negative));
+}
+// console.log(posNeg(1, -1, false)); // true
+// console.log(posNeg(-1, 1, false)); // true
+// console.log(posNeg(-4, -5, true)); // true
+// ------------------------------------------
 //# sourceMappingURL=index.js.map

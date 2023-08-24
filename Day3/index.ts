@@ -28,3 +28,21 @@ function nearHundred(n: number): boolean {
 // console.log(nearHundred(89)); // false
 
 // ------------------------------------
+
+// posNeg(1, -1, false) → true
+// posNeg(-1, 1, false) → true
+// posNeg(-4, -5, true) → true
+
+function posNeg(a: number, b: number, negative: boolean): boolean {
+    return (
+        (a < 0 && b > 0) ||
+        (a > 0 && b < 0 && !negative) ||
+        (a < 0 && b < 0 && negative)
+    );
+}
+
+// console.log(posNeg(1, -1, false)); // true
+// console.log(posNeg(-1, 1, false)); // true
+// console.log(posNeg(-4, -5, true)); // true
+
+// ------------------------------------------
