@@ -60,3 +60,18 @@ function notString(str: string): string {
 // console.log(notString("not bad")); // not bad
 
 // ------------------------------------------
+
+// missingChar("kitten", 1) → "ktten"
+// missingChar("kitten", 0) → "itten"
+// missingChar("kitten", 4) → "kittn"
+
+function missingChar(str: string, n: number): string {
+    return str.slice(0, n) + str.slice(n + 1);
+}
+
+// console.log(missingChar("kitten", 1)); // ktten
+// console.log(missingChar("kitten", 0)); // itten
+// console.log(missingChar("kitten", 4)); // kittn
+// console.log(missingChar("kitten", 5)); // kitte
+
+// ------------------------------------------

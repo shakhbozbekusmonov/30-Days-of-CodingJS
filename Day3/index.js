@@ -40,7 +40,18 @@ function posNeg(a, b, negative) {
 function notString(str) {
     return str.startsWith("not") ? str : "not " + str;
 }
-console.log(notString("candy")); // not candy
-console.log(notString("x")); // not x
-console.log(notString("not bad")); // not bad
+// console.log(notString("candy")); // not candy
+// console.log(notString("x")); // not x
+// console.log(notString("not bad")); // not bad
+// ------------------------------------------
+// missingChar("kitten", 1) → "ktten"
+// missingChar("kitten", 0) → "itten"
+// missingChar("kitten", 4) → "kittn"
+function missingChar(str, n) {
+    return str.slice(0, n) + str.slice(n + 1);
+}
+console.log(missingChar("kitten", 1)); // ktten
+console.log(missingChar("kitten", 0)); // itten
+console.log(missingChar("kitten", 4)); // kittn
+console.log(missingChar("kitten", 5)); // kitte
 //# sourceMappingURL=index.js.map
