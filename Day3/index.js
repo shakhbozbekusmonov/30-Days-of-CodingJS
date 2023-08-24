@@ -97,4 +97,14 @@ function or35(n) {
 // console.log(or35(10)); // true
 // console.log(or35(8)); // false
 // ------------------------------------------
+// front22('kitten') → kikittenki
+// front22('Ha') → HaHaHa
+// front22('abc') → ababcab
+function front22(str) {
+    return str.slice(0, 2) + str + str.slice(0, 2);
+}
+// console.log(front22("kitten")); // kikittenki
+// console.log(front22("Ha")); // HaHaHa
+// console.log(front22("abc")); // ababcab
+// ------------------------------------------
 //# sourceMappingURL=index.js.map

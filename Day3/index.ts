@@ -133,3 +133,17 @@ function or35(n: number): boolean {
 // console.log(or35(8)); // false
 
 // ------------------------------------------
+
+// front22('kitten') → kikittenki
+// front22('Ha') → HaHaHa
+// front22('abc') → ababcab
+
+function front22(str: string): string {
+    return str.slice(0, 2) + str + str.slice(0, 2);
+}
+
+// console.log(front22("kitten")); // kikittenki
+// console.log(front22("Ha")); // HaHaHa
+// console.log(front22("abc")); // ababcab
+
+// ------------------------------------------
