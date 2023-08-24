@@ -34,4 +34,13 @@ function posNeg(a, b, negative) {
 // console.log(posNeg(-1, 1, false)); // true
 // console.log(posNeg(-4, -5, true)); // true
 // ------------------------------------------
+// notString("candy") → "not candy"
+// notString("x") → "not x"
+// notString("not bad") → "not bad"
+function notString(str) {
+    return str.startsWith("not") ? str : "not " + str;
+}
+console.log(notString("candy")); // not candy
+console.log(notString("x")); // not x
+console.log(notString("not bad")); // not bad
 //# sourceMappingURL=index.js.map
