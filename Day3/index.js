@@ -107,4 +107,14 @@ function front22(str) {
 // console.log(front22("Ha")); // HaHaHa
 // console.log(front22("abc")); // ababcab
 // ------------------------------------------
+// startHi('hi there') → true
+// startHi('hi') → true
+// startHi('hello hi') → false
+function startHi(str) {
+    return str.startsWith("hi");
+}
+// console.log(startHi("hi there")); // true
+// console.log(startHi("hi")); // true
+// console.log(startHi("hello hi")); // false
+// ------------------------------------------
 //# sourceMappingURL=index.js.map

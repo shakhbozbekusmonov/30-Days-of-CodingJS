@@ -147,3 +147,17 @@ function front22(str: string): string {
 // console.log(front22("abc")); // ababcab
 
 // ------------------------------------------
+
+// startHi('hi there') → true
+// startHi('hi') → true
+// startHi('hello hi') → false
+
+function startHi(str: string): boolean {
+    return str.startsWith("hi");
+}
+
+// console.log(startHi("hi there")); // true
+// console.log(startHi("hi")); // true
+// console.log(startHi("hello hi")); // false
+
+// ------------------------------------------
