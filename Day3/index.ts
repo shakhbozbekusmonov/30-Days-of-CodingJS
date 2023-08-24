@@ -75,3 +75,33 @@ function missingChar(str: string, n: number): string {
 // console.log(missingChar("kitten", 5)); // kitte
 
 // ------------------------------------------
+
+// frontBack("code") → "eodc"
+// frontBack("a") → "a"
+// frontBack("ab") → "ba"
+
+function frontBack(str: string): string {
+    return str.length > 1
+        ? str.slice(-1) + str.slice(1, -1) + str.slice(0, 1)
+        : str;
+}
+
+// console.log(frontBack("code")); // eodc
+// console.log(frontBack("a")); // a
+// console.log(frontBack("ab")); // ba
+
+// ------------------------------------------
+
+// front3('JavaScript') → JavJavJav
+// front3('Chocolate') → ChoChoCho
+// front3('abc') → abcabcabc
+
+function front3(str: string): string {
+    return str.slice(0, 3).repeat(3);
+}
+
+console.log(front3("JavaScript")); // JavJavJav
+console.log(front3("Chocolate")); // ChoChoCho
+console.log(front3("abc")); // abcabcabc
+
+// ------------------------------------------
