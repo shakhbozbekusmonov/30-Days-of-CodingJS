@@ -100,8 +100,22 @@ function front3(str: string): string {
     return str.slice(0, 3).repeat(3);
 }
 
-console.log(front3("JavaScript")); // JavJavJav
-console.log(front3("Chocolate")); // ChoChoCho
-console.log(front3("abc")); // abcabcabc
+// console.log(front3("JavaScript")); // JavJavJav
+// console.log(front3("Chocolate")); // ChoChoCho
+// console.log(front3("abc")); // abcabcabc
+
+// ------------------------------------------
+
+// backAround('cat') → tcatt
+// backAround('Hello') → oHelloo
+// backAround('a') → aaa
+
+function backAround(str: string): string {
+    return str.slice(-1) + str + str.slice(-1);
+}
+
+// console.log(backAround("cat")); // tcatt
+// console.log(backAround("Hello")); // oHelloo
+// console.log(backAround("a")); // aaa
 
 // ------------------------------------------
