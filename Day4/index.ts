@@ -113,3 +113,21 @@ function intMax(a: number, b: number, c: number): number {
 // console.log(intMax(3, 2, 1)); // 3
 
 // ----------------------------------------------
+
+// close10(8, 13) → 8
+// close10(13, 8) → 8
+// close10(13, 7) → 0
+
+function close10(a: number, b: number): number {
+    return Math.abs(10 - a) < Math.abs(10 - b)
+        ? a
+        : Math.abs(10 - a) > Math.abs(10 - b)
+        ? b
+        : 0;
+}
+
+// console.log(close10(8, 13)); // 8
+// console.log(close10(13, 8)); // 8
+// console.log(close10(13, 7)); // 0
+
+// ------------- END -----------------

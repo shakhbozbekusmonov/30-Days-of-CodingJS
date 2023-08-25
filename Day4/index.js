@@ -87,4 +87,18 @@ function intMax(a, b, c) {
 // console.log(intMax(1, 3, 2)); // 3
 // console.log(intMax(3, 2, 1)); // 3
 // ----------------------------------------------
+// close10(8, 13) → 8
+// close10(13, 8) → 8
+// close10(13, 7) → 0
+function close10(a, b) {
+    return Math.abs(10 - a) < Math.abs(10 - b)
+        ? a
+        : Math.abs(10 - a) > Math.abs(10 - b)
+            ? b
+            : 0;
+}
+// console.log(close10(8, 13)); // 8
+// console.log(close10(13, 8)); // 8
+// console.log(close10(13, 7)); // 0
+// ------------- END -----------------
 //# sourceMappingURL=index.js.map
