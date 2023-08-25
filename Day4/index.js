@@ -43,4 +43,15 @@ function mixStart(str) {
 // console.log(mixStart('mix snacks')); // true
 // console.log(mixStart('pix snacks')); // true
 // console.log(mixStart('piz snacks')); // false
+// ---------------------------------------------------
+// delDel('adelbc') → abc
+// delDel('adelHello') → aHello
+// delDel('abcdel') → abcdel
+function delDel(str) {
+    return str.startsWith("del", 1) ? str.slice(0, 1) + str.slice(4) : str;
+}
+// console.log(delDel('adelbc')); // abc
+// console.log(delDel('adelHello')); // aHello
+// console.log(delDel('abcdel')); // abcdel
+// ---------------------------------------------------
 //# sourceMappingURL=index.js.map
