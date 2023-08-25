@@ -34,4 +34,13 @@ function loneTeen(a, b) {
 // console.log(loneTeen(13, 13)); // false
 // console.log(loneTeen(99, 99)); // false
 // ---------------------------------------------------
+// mixStart('mix snacks') → true
+// mixStart('pix snacks') → true
+// mixStart('piz snacks') → false
+function mixStart(str) {
+    return str.startsWith("ix", 1);
+}
+// console.log(mixStart('mix snacks')); // true
+// console.log(mixStart('pix snacks')); // true
+// console.log(mixStart('piz snacks')); // false
 //# sourceMappingURL=index.js.map
