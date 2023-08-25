@@ -29,3 +29,21 @@ function hasTeen(a: number, b: number, c: number): boolean {
 // console.log(hasTeen(20, 10, 13)); // true
 
 // ---------------------------------------------------
+
+// loneTeen(13, 99) → true
+// loneTeen(21, 19) → true
+// loneTeen(13, 13) → false
+
+function loneTeen(a: number, b: number): boolean {
+    return (
+        (a >= 13 && a <= 19 && (b < 13 || b > 19)) ||
+        ((a < 13 || a > 19) && b >= 13 && b <= 19)
+    );
+}
+
+// console.log(loneTeen(13, 99)); // true
+// console.log(loneTeen(21, 19)); // true
+// console.log(loneTeen(13, 13)); // false
+// console.log(loneTeen(99, 99)); // false
+
+// ---------------------------------------------------

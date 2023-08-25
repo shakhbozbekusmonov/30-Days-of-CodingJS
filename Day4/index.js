@@ -22,4 +22,16 @@ function hasTeen(a, b, c) {
 // console.log(hasTeen(20, 19, 10)); // true
 // console.log(hasTeen(20, 10, 13)); // true
 // ---------------------------------------------------
+// loneTeen(13, 99) → true
+// loneTeen(21, 19) → true
+// loneTeen(13, 13) → false
+function loneTeen(a, b) {
+    return ((a >= 13 && a <= 19 && (b < 13 || b > 19)) ||
+        ((a < 13 || a > 19) && b >= 13 && b <= 19));
+}
+// console.log(loneTeen(13, 99)); // true
+// console.log(loneTeen(21, 19)); // true
+// console.log(loneTeen(13, 13)); // false
+// console.log(loneTeen(99, 99)); // false
+// ---------------------------------------------------
 //# sourceMappingURL=index.js.map
