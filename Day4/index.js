@@ -12,4 +12,14 @@ function in1020(a, b) {
 // console.log(in1020(21, 12)); // true
 // console.log(in1020(8, 99)); // false
 // ---------------------------------------------------
+// hasTeen(13, 20, 10) → true
+// hasTeen(20, 19, 10) → true
+// hasTeen(20, 10, 13) → true
+function hasTeen(a, b, c) {
+    return (a >= 13 && a <= 19) || (b >= 13 && b <= 19) || (c >= 13 && c <= 19);
+}
+// console.log(hasTeen(13, 20, 10)); // true
+// console.log(hasTeen(20, 19, 10)); // true
+// console.log(hasTeen(20, 10, 13)); // true
+// ---------------------------------------------------
 //# sourceMappingURL=index.js.map
