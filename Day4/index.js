@@ -76,4 +76,15 @@ function startOz(str) {
 // console.log(startOz("oxx")); // o
 // console.log(startOz("abc")); // ""
 // ---------------------------------------------
+// intMax(1, 2, 3) → 3
+// intMax(1, 3, 2) → 3
+// intMax(3, 2, 1) → 3
+function intMax(a, b, c) {
+    // return a > b && a > c ? a : b > a && b > c ? b : c;
+    return Math.max(a, b, c);
+}
+// console.log(intMax(1, 2, 3)); // 3
+// console.log(intMax(1, 3, 2)); // 3
+// console.log(intMax(3, 2, 1)); // 3
+// ----------------------------------------------
 //# sourceMappingURL=index.js.map

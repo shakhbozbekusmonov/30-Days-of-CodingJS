@@ -98,3 +98,18 @@ function startOz(str: string): string {
 // console.log(startOz("abc")); // ""
 
 // ---------------------------------------------
+
+// intMax(1, 2, 3) → 3
+// intMax(1, 3, 2) → 3
+// intMax(3, 2, 1) → 3
+
+function intMax(a: number, b: number, c: number): number {
+    // return a > b && a > c ? a : b > a && b > c ? b : c;
+    return Math.max(a, b, c);
+}
+
+// console.log(intMax(1, 2, 3)); // 3
+// console.log(intMax(1, 3, 2)); // 3
+// console.log(intMax(3, 2, 1)); // 3
+
+// ----------------------------------------------
