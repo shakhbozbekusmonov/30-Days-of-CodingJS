@@ -54,4 +54,26 @@ function delDel(str) {
 // console.log(delDel('adelHello')); // aHello
 // console.log(delDel('abcdel')); // abcdel
 // ---------------------------------------------------
+// startOz('ozymandias') → oz
+// startOz('bzoo') → z
+// startOz('oxx') → o
+function startOz(str) {
+    if (str.startsWith("oz")) {
+        return "oz";
+    }
+    else if (str.startsWith("o")) {
+        return "o";
+    }
+    else if (str.startsWith("z", 1)) {
+        return "z";
+    }
+    else {
+        return "";
+    }
+}
+// console.log(startOz("ozymandias")); // oz
+// console.log(startOz("bzoo")); // z
+// console.log(startOz("oxx")); // o
+// console.log(startOz("abc")); // ""
+// ---------------------------------------------
 //# sourceMappingURL=index.js.map
