@@ -44,8 +44,18 @@ function stringE(str) {
     }
     return count >= 1 && count <= 3;
 }
-console.log(stringE("Hello")); // true
-console.log(stringE("Heelle")); // true
-console.log(stringE("Heelele")); // false
+// console.log(stringE("Hello")); // true
+// console.log(stringE("Heelle")); // true
+// console.log(stringE("Heelele")); // false
+// --------------------------------------
+// lastDigit(7, 17) → true
+// lastDigit(6, 17) → false
+// lastDigit(3, 113) → true
+function lastDigit(a, b) {
+    return a % 10 === b || b % 10 === a;
+}
+// console.log(lastDigit(7, 17)); // true
+// console.log(lastDigit(6, 17)); // false
+// console.log(lastDigit(3, 113)); // true
 // --------------------------------------
 //# sourceMappingURL=index.js.map
