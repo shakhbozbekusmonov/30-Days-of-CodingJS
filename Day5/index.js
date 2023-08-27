@@ -81,5 +81,5 @@ function everyNth(str, n) {
 // console.log(everyNth("Miracle", 2)); // Mrce
 // console.log(everyNth("abcdefg", 2)); // aceg
 // console.log(everyNth("abcdefg", 3)); // adg
-// --------------------------------------------
+// ----------------- END --------------------
 //# sourceMappingURL=index.js.map

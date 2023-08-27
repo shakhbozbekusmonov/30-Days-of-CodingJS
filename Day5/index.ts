@@ -106,4 +106,4 @@ function everyNth(str: string, n: number): string {
 // console.log(everyNth("abcdefg", 2)); // aceg
 // console.log(everyNth("abcdefg", 3)); // adg
 
-// --------------------------------------------
+// ----------------- END --------------------
