@@ -75,3 +75,17 @@ function lastDigit(a: number, b: number): boolean {
 // console.log(lastDigit(3, 113)); // true
 
 // --------------------------------------
+
+// endUp('Hello') → HeLLO
+// endUp('hi there') → hi thERE
+// endUp('hi') → HI
+
+function endUp(str: string): string {
+    return str.slice(0, -3) + str.slice(-3).toUpperCase();
+}
+
+// console.log(endUp("Hello")); // HeLLO
+// console.log(endUp("hi there")); // hi thERE
+// console.log(endUp("hi")); // HI
+
+// --------------------------------------

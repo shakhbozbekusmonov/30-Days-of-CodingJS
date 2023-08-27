@@ -58,4 +58,14 @@ function lastDigit(a, b) {
 // console.log(lastDigit(6, 17)); // false
 // console.log(lastDigit(3, 113)); // true
 // --------------------------------------
+// endUp('Hello') → HeLLO
+// endUp('hi there') → hi thERE
+// endUp('hi') → HI
+function endUp(str) {
+    return str.slice(0, -3) + str.slice(-3).toUpperCase();
+}
+// console.log(endUp("Hello")); // HeLLO
+// console.log(endUp("hi there")); // hi thERE
+// console.log(endUp("hi")); // HI
+// --------------------------------------
 //# sourceMappingURL=index.js.map
