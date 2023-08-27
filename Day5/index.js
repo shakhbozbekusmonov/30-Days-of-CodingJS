@@ -32,4 +32,20 @@ function max1020(a, b) {
 // console.log(max1020(19, 11)); // 19
 // console.log(max1020(11, 9)); // 11
 // --------------------------------------
+// stringE('Hello') → true
+// stringE('Heelle') → true
+// stringE('Heelele') → false
+function stringE(str) {
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === "e") {
+            count++;
+        }
+    }
+    return count >= 1 && count <= 3;
+}
+console.log(stringE("Hello")); // true
+console.log(stringE("Heelle")); // true
+console.log(stringE("Heelele")); // false
+// --------------------------------------
 //# sourceMappingURL=index.js.map
