@@ -1,6 +1,6 @@
 "use strict";
 // Copyright (c) 2023 author Shakhbozbek Usmonov Miracle Programmer
-// Day 4 Condingbat Warmup 1
+// Day 5 Condingbat Warmup 1
 // ---------- Started ----------
 // in3050(30, 31) → true
 // in3050(30, 41) → false
