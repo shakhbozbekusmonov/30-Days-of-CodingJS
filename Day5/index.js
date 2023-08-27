@@ -68,4 +68,18 @@ function endUp(str) {
 // console.log(endUp("hi there")); // hi thERE
 // console.log(endUp("hi")); // HI
 // --------------------------------------
+// everyNth('Miracle', 2) → Mrce
+// everyNth('abcdefg', 2) → aceg
+// everyNth('abcdefg', 3) → adg
+function everyNth(str, n) {
+    let newStr = str.slice(0, 1);
+    for (let i = n; i < str.length; i += n) {
+        newStr += str[i];
+    }
+    return newStr;
+}
+// console.log(everyNth("Miracle", 2)); // Mrce
+// console.log(everyNth("abcdefg", 2)); // aceg
+// console.log(everyNth("abcdefg", 3)); // adg
+// --------------------------------------------
 //# sourceMappingURL=index.js.map
