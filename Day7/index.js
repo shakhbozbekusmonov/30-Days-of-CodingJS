@@ -36,4 +36,22 @@ function arrayFront9(nums) {
     return newArr.includes(9) && newArr.length !== 0;
 }
 // -------------------------------------------
+function array123(nums) {
+    if (nums.length !== 0) {
+        for (let i = 0; i < nums.length; i++) {
+            for (let j = i + 1; j < nums.length; j++) {
+                for (let k = j + 1; k < nums.length; k++) {
+                    if (nums[i] === 1 && nums[j] === 2 && nums[k] === 3) {
+                        return true;
+                    }
+                    else {
+                        return false;
+                    }
+                }
+            }
+        }
+    }
+    return false;
+}
+// -------------------------------------------
 //# sourceMappingURL=index.js.map
