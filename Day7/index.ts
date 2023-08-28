@@ -66,3 +66,17 @@ function array123(nums: number[]): boolean {
 }
 
 // -------------------------------------------
+
+// stringMatch('xxcaazz', 'xxbaaz') → 3
+// stringMatch('abc', 'abc') → 2
+// stringMatch('abc', 'axc') → 0
+
+function stringMatch(a: string, b: string): number {
+    let count = 0;
+    for (let i = 0; i < a.length - 1; i++) {
+        if (a.substring(i, i + 2) === b.substring(i, i + 2)) count++;
+    }
+    return count;
+}
+
+// -----------------------------------------------

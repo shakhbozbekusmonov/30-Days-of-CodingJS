@@ -54,4 +54,16 @@ function array123(nums) {
     return false;
 }
 // -------------------------------------------
+// stringMatch('xxcaazz', 'xxbaaz') → 3
+// stringMatch('abc', 'abc') → 2
+// stringMatch('abc', 'axc') → 0
+function stringMatch(a, b) {
+    let count = 0;
+    for (let i = 0; i < a.length - 1; i++) {
+        if (a.substring(i, i + 2) === b.substring(i, i + 2))
+            count++;
+    }
+    return count;
+}
+// -----------------------------------------------
 //# sourceMappingURL=index.js.map
