@@ -113,4 +113,18 @@ function array667(nums) {
     return count;
 }
 // -----------------------------------------
+// noTriples([1,1,2,2,1]) → true
+// noTriples([1,1,2,2,2,1]) → false
+// noTriples([1,1,2,2,2,1]) → false
+function noTriples(nums) {
+    if (nums.length < 3)
+        return true;
+    for (let i = 0; i < nums.length - 2; i++) {
+        if (nums[i] === nums[i + 1] && nums[i] === nums[i + 2]) {
+            return false;
+        }
+    }
+    return true;
+}
+//-----------------------------------------
 //# sourceMappingURL=index.js.map
