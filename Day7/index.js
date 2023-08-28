@@ -79,4 +79,18 @@ function stringX(str) {
     return newStr + str.slice(-1);
 }
 // -----------------------------------------------
+// altPairs('kitten') → kien
+// altPairs('Chocolate') → Chole
+// altPairs('CodingHorror') → Congrr
+function altPairs(str) {
+    let newStr = "";
+    for (let i = 0; i < str.length; i += 4) {
+        newStr += str.charAt(i);
+        if (i + 1 < str.length) {
+            newStr += str.charAt(i + 1);
+        }
+    }
+    return newStr;
+}
+// ---------------------------------------------
 //# sourceMappingURL=index.js.map
