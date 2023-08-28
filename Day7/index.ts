@@ -113,3 +113,13 @@ function altPairs(str: string): string {
 }
 
 // ---------------------------------------------
+
+// stringYak('yakpak') → pak
+// stringYak('pakyak') → pak
+// stringYak('yak123ya') → 123ya
+
+function stringYak(str: string): string {
+    return str.replace(/yak/gi, "");
+}
+
+// --------------------------------------------

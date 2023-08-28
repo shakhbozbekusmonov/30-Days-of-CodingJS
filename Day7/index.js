@@ -93,4 +93,11 @@ function altPairs(str) {
     return newStr;
 }
 // ---------------------------------------------
+// stringYak('yakpak') → pak
+// stringYak('pakyak') → pak
+// stringYak('yak123ya') → 123ya
+function stringYak(str) {
+    return str.replace(/yak/gi, "");
+}
+// --------------------------------------------
 //# sourceMappingURL=index.js.map
