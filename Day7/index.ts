@@ -123,3 +123,21 @@ function stringYak(str: string): string {
 }
 
 // --------------------------------------------
+
+// array667([6,6,2]) → 1
+// array667([6,6,2,6]) → 1
+// array667([6,7,2,6]) → 1
+
+function array667(nums: number[]): number {
+    let count = 0;
+    for (let i = 0; i < nums.length; i++) {
+        if (
+            (nums[i] === 6 && nums[i + 1]) === 6 ||
+            (nums[i] === 6 && nums[i + 1] === 7)
+        )
+            count++;
+    }
+    return count;
+}
+
+// -----------------------------------------
