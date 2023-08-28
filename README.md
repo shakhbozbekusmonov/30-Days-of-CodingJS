@@ -1,13 +1,13 @@
 
-# 30 Days of CodingBat TypeScript Challenge
+# 30 Days of CodingJS TypeScript Challenge
 
 Welcome to the 30 Days of CodingBat TypeScript Challenge! This challenge is designed to help you improve your TypeScript coding skills by solving a variety of programming problems on CodingBat over the course of 30 days.
 
 ## Challenge Overview
 
-### What is CodingBat?
+### What is CodingJS?
 
-[CodingBat](https://codingbat.com) is a platform that provides a collection of coding exercises in various programming languages, including TypeScript. It's a great resource for practicing your coding skills and improving your problem-solving abilities.
+[CodingJS]([https://codingjs.com](https://the-winter.github.io/codingjs/)) is a platform that provides a collection of coding exercises in various programming languages, including TypeScript. It's a great resource for practicing your coding skills and improving your problem-solving abilities.
 
 ### Challenge Goals
 
