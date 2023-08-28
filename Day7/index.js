@@ -66,4 +66,17 @@ function stringMatch(a, b) {
     return count;
 }
 // -----------------------------------------------
+// stringX('xxHxix') → xHix
+// stringX('abxxxcd') → abcd
+// stringX('xabxxxcdx') → xabcdx
+function stringX(str) {
+    let newStr = str.slice(0, 1);
+    for (let i = 1; i < str.length - 1; i++) {
+        if (str[i] !== "x") {
+            newStr += str[i];
+        }
+    }
+    return newStr + str.slice(-1);
+}
+// -----------------------------------------------
 //# sourceMappingURL=index.js.map

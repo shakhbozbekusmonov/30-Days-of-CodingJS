@@ -80,3 +80,19 @@ function stringMatch(a: string, b: string): number {
 }
 
 // -----------------------------------------------
+
+// stringX('xxHxix') → xHix
+// stringX('abxxxcd') → abcd
+// stringX('xabxxxcdx') → xabcdx
+
+function stringX(str: string): string {
+    let newStr = str.slice(0, 1);
+    for (let i = 1; i < str.length - 1; i++) {
+        if (str[i] !== "x") {
+            newStr += str[i];
+        }
+    }
+    return newStr + str.slice(-1);
+}
+
+// -----------------------------------------------
