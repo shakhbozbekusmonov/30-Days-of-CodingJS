@@ -127,4 +127,17 @@ function noTriples(nums) {
     return true;
 }
 //-----------------------------------------
+// has271([1,2,7,1]) → true
+// has271([1,2,8,1]) → false
+// has271([2,7,1]) → true
+function has271(nums) {
+    if (nums.length < 3)
+        return false;
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] === 2 && nums[i + 1] === 7 && nums[i + 2] === 1)
+            return true;
+    }
+    return false;
+}
+//----------------- END --------------------
 //# sourceMappingURL=index.js.map
