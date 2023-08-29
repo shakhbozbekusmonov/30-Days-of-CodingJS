@@ -100,4 +100,11 @@ function withoutEnd2(str) {
     return str.slice(1, -1);
 }
 //--------------------------------------------
+// middleTwo('string') → ri
+// middleTwo('code') → od
+// middleTwo('Practice') → ct
+function middleTwo(str) {
+    return str.slice(str.length / 2 - 1, str.length / 2 + 1);
+}
+// --------------------------------------------
 //# sourceMappingURL=index.js.map

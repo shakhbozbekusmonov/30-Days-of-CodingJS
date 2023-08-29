@@ -142,3 +142,13 @@ function withoutEnd2(str: string): string {
 }
 
 //--------------------------------------------
+
+// middleTwo('string') → ri
+// middleTwo('code') → od
+// middleTwo('Practice') → ct
+
+function middleTwo(str: string): string {
+    return str.slice(str.length / 2 - 1, str.length / 2 + 1);
+}
+
+// --------------------------------------------
