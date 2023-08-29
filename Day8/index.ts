@@ -240,3 +240,17 @@ function conCat(a: string, b: string): string {
 }
 
 //-------------------------------------------------
+
+// lastTwo('coding') → codign
+// lastTwo('cat') → cta
+// lastTwo('ab') → ba
+
+function lastTwo(str: string): string {
+    return (
+        str.slice(0, -2) +
+        str.slice(-1) +
+        str.slice(str.length - 2, str.length - 1)
+    );
+}
+
+//----------------------------------------------------

@@ -173,4 +173,13 @@ function conCat(a, b) {
     return a.slice(-1) === b.slice(0, 1) ? a.slice(0, -1) + b : a + b;
 }
 //-------------------------------------------------
+// lastTwo('coding') → codign
+// lastTwo('cat') → cta
+// lastTwo('ab') → ba
+function lastTwo(str) {
+    return (str.slice(0, -2) +
+        str.slice(-1) +
+        str.slice(str.length - 2, str.length - 1));
+}
+//----------------------------------------------------
 //# sourceMappingURL=index.js.map
