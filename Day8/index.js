@@ -23,4 +23,11 @@ function makeTags(tag, word) {
     return `<${tag}>${word}</${tag}>`;
 }
 //-----------------------------------------
+// makeOutWord('<<>>', 'Yay') → <>
+// makeOutWord('<<>>', 'WooHoo') → <>
+// makeOutWord('[[]]', 'word') → [[word]]
+function makeOutWord(out, word) {
+    return out.slice(0, out.length / 2) + word + out.slice(out.length / 2);
+}
+//----------------------------------------
 //# sourceMappingURL=index.js.map

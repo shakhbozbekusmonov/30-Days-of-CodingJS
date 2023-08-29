@@ -33,3 +33,12 @@ function makeTags(tag: string, word: string): string {
 
 //-----------------------------------------
 
+// makeOutWord('<<>>', 'Yay') → <>
+// makeOutWord('<<>>', 'WooHoo') → <>
+// makeOutWord('[[]]', 'word') → [[word]]
+
+function makeOutWord(out: string, word: string): string {
+    return out.slice(0, out.length / 2) + word + out.slice(out.length / 2);
+}
+
+//----------------------------------------
