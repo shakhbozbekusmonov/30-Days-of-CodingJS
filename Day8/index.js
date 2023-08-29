@@ -107,4 +107,11 @@ function middleTwo(str) {
     return str.slice(str.length / 2 - 1, str.length / 2 + 1);
 }
 // --------------------------------------------
+// endsLy('oddly') → true
+// endsLy('y') → false
+// endsLy('oddl') → false
+function endsLy(str) {
+    return str.endsWith("ly");
+}
+//--------------------------------------------
 //# sourceMappingURL=index.js.map

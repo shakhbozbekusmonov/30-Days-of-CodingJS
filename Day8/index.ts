@@ -152,3 +152,14 @@ function middleTwo(str: string): string {
 }
 
 // --------------------------------------------
+
+// endsLy('oddly') → true
+// endsLy('y') → false
+// endsLy('oddl') → false
+
+function endsLy(str: string): boolean {
+    return str.endsWith("ly");
+}
+
+//--------------------------------------------
+
