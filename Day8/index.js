@@ -211,4 +211,11 @@ function minCat(a, b) {
     return a.length === 0 || b.length === 0 ? "" : a + b;
 }
 //---------------------------------------------
+// extraFront('Hello') → HeHeHe
+// extraFront('ab') → ababab
+// extraFront('H') → HHH
+function extraFront(str) {
+    return str.substring(0, 2).repeat(3);
+}
+//--------------------------------------------
 //# sourceMappingURL=index.js.map

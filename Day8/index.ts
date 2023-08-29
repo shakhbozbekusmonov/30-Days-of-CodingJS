@@ -290,3 +290,13 @@ function minCat(a: string, b: string): string {
 }
 
 //---------------------------------------------
+
+// extraFront('Hello') → HeHeHe
+// extraFront('ab') → ababab
+// extraFront('H') → HHH
+
+function extraFront(str: string): string {
+    return str.substring(0, 2).repeat(3);
+}
+
+//--------------------------------------------
