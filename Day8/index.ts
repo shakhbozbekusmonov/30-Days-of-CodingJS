@@ -112,3 +112,13 @@ function left2(str: string): string {
 }
 
 //---------------------------------------------
+
+// right2('Hello') → loHel
+// right2('java') → vaja
+// right2('Hi') → Hi
+
+function right2(str: string): string {
+    return str.slice(-2) + str.slice(0, -2);
+}
+
+//--------------------------------------------
