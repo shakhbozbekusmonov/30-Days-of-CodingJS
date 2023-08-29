@@ -166,4 +166,11 @@ function lastChars(a, b) {
     return a.slice(0, 1) + b.slice(-1);
 }
 //------------------------------------------------
+// conCat('abc', 'cat') → abcat
+// conCat('dog', 'cat') → dogcat
+// conCat('abc', '') → abc
+function conCat(a, b) {
+    return a.slice(-1) === b.slice(0, 1) ? a.slice(0, -1) + b : a + b;
+}
+//-------------------------------------------------
 //# sourceMappingURL=index.js.map
