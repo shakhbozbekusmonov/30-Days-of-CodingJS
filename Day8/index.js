@@ -58,4 +58,11 @@ function withoutEnd(str) {
     return str.slice(1, -1);
 }
 //--------------------------------------------
+// comboString('Hello', 'hi') → hiHellohi
+// comboString('Hi', 'Hello') → HiHelloHi
+// comboString('aaa', 'b') → baaab
+function comboString(a, b) {
+    return a.length > b.length ? b + a + b : a + b + a;
+}
+//---------------------------------------------
 //# sourceMappingURL=index.js.map

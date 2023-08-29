@@ -82,3 +82,13 @@ function withoutEnd(str: string): string {
 }
 
 //--------------------------------------------
+
+// comboString('Hello', 'hi') → hiHellohi
+// comboString('Hi', 'Hello') → HiHelloHi
+// comboString('aaa', 'b') → baaab
+
+function comboString(a: string, b: string): string {
+    return a.length > b.length ? b + a + b : a + b + a;
+}
+
+//---------------------------------------------
