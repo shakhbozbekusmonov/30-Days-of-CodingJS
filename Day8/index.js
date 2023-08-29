@@ -37,4 +37,11 @@ function extraEnd(str) {
     return str.slice(-2).repeat(3);
 }
 //-----------------------------------------
+// firstTwo('Hello') → He
+// firstTwo('abcdefg') → ab
+// firstTwo('ab') → ab
+function firstTwo(str) {
+    return str.substring(0, 2);
+}
+//----------------------------------------
 //# sourceMappingURL=index.js.map

@@ -52,3 +52,13 @@ function extraEnd(str: string): string {
 }
 
 //-----------------------------------------
+
+// firstTwo('Hello') → He
+// firstTwo('abcdefg') → ab
+// firstTwo('ab') → ab
+
+function firstTwo(str: string): string {
+    return str.substring(0, 2);
+}
+
+//----------------------------------------
