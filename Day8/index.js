@@ -130,4 +130,11 @@ function twoChar(str, index) {
         : str.slice(0, 2);
 }
 // ------------------------------------------
+// middleThree('Candy') → and
+// middleThree('and') → and
+// middleThree('solving') → lvi
+function middleThree(str) {
+    return str.slice(str.length / 2 - 1, str.length / 2 + 2);
+}
+//--------------------------------------------
 //# sourceMappingURL=index.js.map

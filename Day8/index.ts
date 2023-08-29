@@ -184,3 +184,13 @@ function twoChar(str: string, index: number): string {
 }
 
 // ------------------------------------------
+
+// middleThree('Candy') → and
+// middleThree('and') → and
+// middleThree('solving') → lvi
+
+function middleThree(str: string): string {
+    return str.slice(str.length / 2 - 1, str.length / 2 + 2);
+}
+
+//--------------------------------------------
