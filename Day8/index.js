@@ -144,4 +144,15 @@ function hasBad(str) {
     return str.startsWith("bad") || str.startsWith("bad", 1);
 }
 //--------------------------------------------
+// atFirst('hello') → he
+// atFirst('hi') → hi
+// atFirst('h') → h@
+function atFirst(str) {
+    return str.length >= 2
+        ? str.slice(0, 2)
+        : str.length === 0
+            ? "@@"
+            : str + "@";
+}
+//-------------------------------------------
 //# sourceMappingURL=index.js.map

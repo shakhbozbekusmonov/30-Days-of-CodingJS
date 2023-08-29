@@ -204,3 +204,17 @@ function hasBad(str: string): boolean {
 }
 
 //--------------------------------------------
+
+// atFirst('hello') → he
+// atFirst('hi') → hi
+// atFirst('h') → h@
+
+function atFirst(str: string): string {
+    return str.length >= 2
+        ? str.slice(0, 2)
+        : str.length === 0
+        ? "@@"
+        : str + "@";
+}
+
+//-------------------------------------------
