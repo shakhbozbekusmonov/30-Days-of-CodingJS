@@ -172,3 +172,15 @@ function nTwice(str: string, n: number): string {
 }
 
 //--------------------------------------------
+
+// twoChar('java', 0) → ja
+// twoChar('java', 2) → va
+// twoChar('java', 3) → ja
+
+function twoChar(str: string, index: number): string {
+    return str.slice(index, index + 2).length === 2
+        ? str.slice(index, index + 2)
+        : str.slice(0, 2);
+}
+
+// ------------------------------------------

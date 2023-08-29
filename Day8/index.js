@@ -121,4 +121,13 @@ function nTwice(str, n) {
     return n > 0 ? str.slice(0, n) + str.slice(-n) : "";
 }
 //--------------------------------------------
+// twoChar('java', 0) → ja
+// twoChar('java', 2) → va
+// twoChar('java', 3) → ja
+function twoChar(str, index) {
+    return str.slice(index, index + 2).length === 2
+        ? str.slice(index, index + 2)
+        : str.slice(0, 2);
+}
+// ------------------------------------------
 //# sourceMappingURL=index.js.map
