@@ -65,4 +65,11 @@ function comboString(a, b) {
     return a.length > b.length ? b + a + b : a + b + a;
 }
 //---------------------------------------------
+// nonStart('Hello', 'There') → ellohere
+// nonStart('java', 'code') → avaode
+// nonStart('shotl', 'java') → hotlava
+function nonStart(a, b) {
+    return a.substring(1) + b.substring(1);
+}
+//---------------------------------------------
 //# sourceMappingURL=index.js.map

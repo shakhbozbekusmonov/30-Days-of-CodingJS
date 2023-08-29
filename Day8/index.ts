@@ -92,3 +92,13 @@ function comboString(a: string, b: string): string {
 }
 
 //---------------------------------------------
+
+// nonStart('Hello', 'There') → ellohere
+// nonStart('java', 'code') → avaode
+// nonStart('shotl', 'java') → hotlava
+
+function nonStart(a: string, b: string): string {
+    return a.substring(1) + b.substring(1);
+}
+
+//---------------------------------------------
