@@ -12,3 +12,13 @@ function helloName(name: string): string {
 }
 
 //-----------------------------------------
+
+// makeAbba('Hi', 'Bye') → HiByeByeHi
+// makeAbba('Yo', 'Alice') → YoAliceAliceYo
+// makeAbba('What', 'Up') → WhatUpUpWhat
+
+function makeAbba(a: string, b: string): string {
+    return a + b + b + a;
+}
+
+//-----------------------------------------
