@@ -44,4 +44,11 @@ function firstTwo(str) {
     return str.substring(0, 2);
 }
 //----------------------------------------
+// firstHalf('WooHoo') → Woo
+// firstHalf('HelloThere') → Hello
+// firstHalf('abcdefg') → abc
+function firstHalf(str) {
+    return str.substring(0, str.length / 2);
+}
+//-------------------------------------------
 //# sourceMappingURL=index.js.map

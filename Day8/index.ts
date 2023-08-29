@@ -62,3 +62,13 @@ function firstTwo(str: string): string {
 }
 
 //----------------------------------------
+
+// firstHalf('WooHoo') → Woo
+// firstHalf('HelloThere') → Hello
+// firstHalf('abcdefg') → abc
+
+function firstHalf(str: string): string {
+    return str.substring(0, str.length / 2);
+}
+
+//-------------------------------------------
