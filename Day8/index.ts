@@ -268,3 +268,13 @@ function seeColor(str: string): string {
 }
 
 //--------------------------------------------
+
+// frontAgain('edited') → true
+// frontAgain('edit') → false
+// frontAgain('ed') → true
+
+function frontAgain(str: string): boolean {
+    return str.slice(0, 2) === str.slice(-2) && str.length > 1;
+}
+
+//--------------------------------------------

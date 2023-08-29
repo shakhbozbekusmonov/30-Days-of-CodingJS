@@ -193,4 +193,11 @@ function seeColor(str) {
             : "";
 }
 //--------------------------------------------
+// frontAgain('edited') → true
+// frontAgain('edit') → false
+// frontAgain('ed') → true
+function frontAgain(str) {
+    return str.slice(0, 2) === str.slice(-2) && str.length > 1;
+}
+//--------------------------------------------
 //# sourceMappingURL=index.js.map
