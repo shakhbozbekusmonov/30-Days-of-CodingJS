@@ -72,3 +72,13 @@ function firstHalf(str: string): string {
 }
 
 //-------------------------------------------
+
+// withoutEnd('Hello') → ell
+// withoutEnd('java') → av
+// withoutEnd('coding') → odin
+
+function withoutEnd(str: string): string {
+    return str.slice(1, -1);
+}
+
+//--------------------------------------------

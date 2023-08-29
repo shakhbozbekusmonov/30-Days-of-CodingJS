@@ -51,4 +51,11 @@ function firstHalf(str) {
     return str.substring(0, str.length / 2);
 }
 //-------------------------------------------
+// withoutEnd('Hello') → ell
+// withoutEnd('java') → av
+// withoutEnd('coding') → odin
+function withoutEnd(str) {
+    return str.slice(1, -1);
+}
+//--------------------------------------------
 //# sourceMappingURL=index.js.map
