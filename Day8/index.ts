@@ -122,3 +122,13 @@ function right2(str: string): string {
 }
 
 //--------------------------------------------
+
+// theEnd('Hello', true) → H
+// theEnd('Hello', false) → o
+// theEnd('oh', true) → o
+
+function theEnd(str: string, front: boolean): string {
+    return front ? str.slice(0, 1) : str.slice(-1);
+}
+
+//--------------------------------------------

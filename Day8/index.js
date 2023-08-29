@@ -86,4 +86,11 @@ function right2(str) {
     return str.slice(-2) + str.slice(0, -2);
 }
 //--------------------------------------------
+// theEnd('Hello', true) → H
+// theEnd('Hello', false) → o
+// theEnd('oh', true) → o
+function theEnd(str, front) {
+    return front ? str.slice(0, 1) : str.slice(-1);
+}
+//--------------------------------------------
 //# sourceMappingURL=index.js.map
