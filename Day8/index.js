@@ -182,4 +182,15 @@ function lastTwo(str) {
         str.slice(str.length - 2, str.length - 1));
 }
 //----------------------------------------------------
+// seeColor('redxx') → red
+// seeColor('xxred') →
+// seeColor('blueTimes') → blue
+function seeColor(str) {
+    return str.startsWith("red")
+        ? str.slice(0, 3)
+        : str.startsWith("blue")
+            ? str.slice(0, 4)
+            : "";
+}
+//--------------------------------------------
 //# sourceMappingURL=index.js.map

@@ -254,3 +254,17 @@ function lastTwo(str: string): string {
 }
 
 //----------------------------------------------------
+
+// seeColor('redxx') → red
+// seeColor('xxred') →
+// seeColor('blueTimes') → blue
+
+function seeColor(str: string): string {
+    return str.startsWith("red")
+        ? str.slice(0, 3)
+        : str.startsWith("blue")
+        ? str.slice(0, 4)
+        : "";
+}
+
+//--------------------------------------------
