@@ -16,4 +16,11 @@ function makeAbba(a, b) {
     return a + b + b + a;
 }
 //-----------------------------------------
+// makeTags('i', 'Yay') → Yay
+// makeTags('i', 'Hello') → Hello
+// makeTags('cite', 'Yay') → Yay
+function makeTags(tag, word) {
+    return `<${tag}>${word}</${tag}>`;
+}
+//-----------------------------------------
 //# sourceMappingURL=index.js.map

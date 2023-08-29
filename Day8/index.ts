@@ -22,3 +22,14 @@ function makeAbba(a: string, b: string): string {
 }
 
 //-----------------------------------------
+
+// makeTags('i', 'Yay') → Yay
+// makeTags('i', 'Hello') → Hello
+// makeTags('cite', 'Yay') → Yay
+
+function makeTags(tag: string, word: string): string {
+    return `<${tag}>${word}</${tag}>`;
+}
+
+//-----------------------------------------
+
