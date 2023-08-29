@@ -218,4 +218,13 @@ function extraFront(str) {
     return str.substring(0, 2).repeat(3);
 }
 //--------------------------------------------
+// without2('HelloHe') → lloHe
+// without2('HelloHi') → HelloHi
+// without2('Hi') →
+function without2(str) {
+    return str.slice(0, 2) === str.slice(-2) && str.length > 1
+        ? str.slice(2)
+        : str;
+}
+//--------------------------------------------
 //# sourceMappingURL=index.js.map

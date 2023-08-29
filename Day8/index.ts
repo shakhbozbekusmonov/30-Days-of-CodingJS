@@ -300,3 +300,15 @@ function extraFront(str: string): string {
 }
 
 //--------------------------------------------
+
+// without2('HelloHe') → lloHe
+// without2('HelloHi') → HelloHi
+// without2('Hi') →
+
+function without2(str: string): string {
+    return str.slice(0, 2) === str.slice(-2) && str.length > 1
+        ? str.slice(2)
+        : str;
+}
+
+//--------------------------------------------
