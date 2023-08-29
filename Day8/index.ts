@@ -42,3 +42,13 @@ function makeOutWord(out: string, word: string): string {
 }
 
 //----------------------------------------
+
+// extraEnd('Hello') → lololo
+// extraEnd('ab') → ababab
+// extraEnd('Hi') → HiHiHi
+
+function extraEnd(str: string): string {
+    return str.slice(-2).repeat(3);
+}
+
+//-----------------------------------------

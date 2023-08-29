@@ -30,4 +30,11 @@ function makeOutWord(out, word) {
     return out.slice(0, out.length / 2) + word + out.slice(out.length / 2);
 }
 //----------------------------------------
+// extraEnd('Hello') → lololo
+// extraEnd('ab') → ababab
+// extraEnd('Hi') → HiHiHi
+function extraEnd(str) {
+    return str.slice(-2).repeat(3);
+}
+//-----------------------------------------
 //# sourceMappingURL=index.js.map
