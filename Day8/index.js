@@ -159,13 +159,11 @@ function atFirst(str) {
 // lastChars('yo', 'java') → ya
 // lastChars('hi', '') → h@
 function lastChars(a, b) {
-    return a.length > 0 && b.length === 0
-        ? a.slice(0, 1) + "@"
-        : a.length === 0 && b.length > 0
-            ? "@" + b.slice(-1)
-            : a.length === 0 && b.length === 0
-                ? "@@"
-                : a.slice(0, 1) + b.slice(-1);
+    if (a.length === 0)
+        a = "@";
+    if (b.length === 0)
+        b = "@";
+    return a.slice(0, 1) + b.slice(-1);
 }
 //------------------------------------------------
 //# sourceMappingURL=index.js.map
