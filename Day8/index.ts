@@ -194,3 +194,13 @@ function middleThree(str: string): string {
 }
 
 //--------------------------------------------
+
+// hasBad('badxx') → true
+// hasBad('xbadxx') → true
+// hasBad('xxbadxx') → false
+
+function hasBad(str: string): boolean {
+    return str.startsWith("bad") || str.startsWith("bad", 1);
+}
+
+//--------------------------------------------

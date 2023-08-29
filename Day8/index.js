@@ -137,4 +137,11 @@ function middleThree(str) {
     return str.slice(str.length / 2 - 1, str.length / 2 + 2);
 }
 //--------------------------------------------
+// hasBad('badxx') → true
+// hasBad('xbadxx') → true
+// hasBad('xxbadxx') → false
+function hasBad(str) {
+    return str.startsWith("bad") || str.startsWith("bad", 1);
+}
+//--------------------------------------------
 //# sourceMappingURL=index.js.map
