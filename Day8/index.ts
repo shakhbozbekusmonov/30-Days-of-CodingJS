@@ -102,3 +102,13 @@ function nonStart(a: string, b: string): string {
 }
 
 //---------------------------------------------
+
+// left2('Hello') → lloHe
+// left2('java') → vaja
+// left2('Hi') → Hi
+
+function left2(str: string): string {
+    return str.slice(2) + str.slice(0, 2);
+}
+
+//---------------------------------------------

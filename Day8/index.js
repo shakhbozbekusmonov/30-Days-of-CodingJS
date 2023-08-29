@@ -72,4 +72,11 @@ function nonStart(a, b) {
     return a.substring(1) + b.substring(1);
 }
 //---------------------------------------------
+// left2('Hello') → lloHe
+// left2('java') → vaja
+// left2('Hi') → Hi
+function left2(str) {
+    return str.slice(2) + str.slice(0, 2);
+}
+//---------------------------------------------
 //# sourceMappingURL=index.js.map
