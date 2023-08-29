@@ -93,4 +93,11 @@ function theEnd(str, front) {
     return front ? str.slice(0, 1) : str.slice(-1);
 }
 //--------------------------------------------
+// withoutEnd2('Hello') → ell
+// withoutEnd2('abc') → b
+// withoutEnd2('ab') →
+function withoutEnd2(str) {
+    return str.slice(1, -1);
+}
+//--------------------------------------------
 //# sourceMappingURL=index.js.map

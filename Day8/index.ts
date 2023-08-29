@@ -132,3 +132,13 @@ function theEnd(str: string, front: boolean): string {
 }
 
 //--------------------------------------------
+
+// withoutEnd2('Hello') → ell
+// withoutEnd2('abc') → b
+// withoutEnd2('ab') →
+
+function withoutEnd2(str: string): string {
+    return str.slice(1, -1);
+}
+
+//--------------------------------------------
