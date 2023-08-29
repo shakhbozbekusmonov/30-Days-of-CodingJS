@@ -114,4 +114,11 @@ function endsLy(str) {
     return str.endsWith("ly");
 }
 //--------------------------------------------
+// nTwice('hello', 2) → helo
+// nTwice('Chocolate', 3) → Choate
+// nTwice('Chocolate', 1) → Ce
+function nTwice(str, n) {
+    return n > 0 ? str.slice(0, n) + str.slice(-n) : "";
+}
+//--------------------------------------------
 //# sourceMappingURL=index.js.map

@@ -163,3 +163,12 @@ function endsLy(str: string): boolean {
 
 //--------------------------------------------
 
+// nTwice('hello', 2) → helo
+// nTwice('Chocolate', 3) → Choate
+// nTwice('Chocolate', 1) → Ce
+
+function nTwice(str: string, n: number): string {
+    return n > 0 ? str.slice(0, n) + str.slice(-n) : "";
+}
+
+//--------------------------------------------
