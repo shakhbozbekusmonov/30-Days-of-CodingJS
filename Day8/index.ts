@@ -278,3 +278,15 @@ function frontAgain(str: string): boolean {
 }
 
 //--------------------------------------------
+
+// minCat('Hello', 'Hi') → loHi
+// minCat('Hello', 'java') → ellojava
+// minCat('java', 'Hello') → javaello
+
+function minCat(a: string, b: string): string {
+    if (a.length > b.length) a = a.slice(-b.length);
+    if (a.length < b.length) b = b.slice(-a.length);
+    return a.length === 0 || b.length === 0 ? "" : a + b;
+}
+
+//---------------------------------------------

@@ -200,4 +200,15 @@ function frontAgain(str) {
     return str.slice(0, 2) === str.slice(-2) && str.length > 1;
 }
 //--------------------------------------------
+// minCat('Hello', 'Hi') → loHi
+// minCat('Hello', 'java') → ellojava
+// minCat('java', 'Hello') → javaello
+function minCat(a, b) {
+    if (a.length > b.length)
+        a = a.slice(-b.length);
+    if (a.length < b.length)
+        b = b.slice(-a.length);
+    return a.length === 0 || b.length === 0 ? "" : a + b;
+}
+//---------------------------------------------
 //# sourceMappingURL=index.js.map
