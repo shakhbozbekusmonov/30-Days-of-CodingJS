@@ -117,3 +117,18 @@ function catDog(str: string): boolean {
 }
 
 //---------------------------------------------------------------------
+
+// countCode('aaacodebbb') → 1
+// countCode('codexxcode') → 2
+// countCode('cozexxcope') → 2
+
+function countCode(str: string): number {
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str.slice(i, i + 2) === "co" && str.slice(i + 3, i + 4) === "e")
+            count++;
+    }
+    return count;
+}
+
+//-------------------- END --------------------
