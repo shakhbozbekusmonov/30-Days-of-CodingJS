@@ -59,3 +59,19 @@ function withoutX2(str: string): string {
     }
     return newStr;
 }
+
+//-------------------------------------------------------------
+
+// doubleChar('The') → TThhee
+// doubleChar('AAbb') → AAAAbbbb
+// doubleChar('Hi-There') → HHii--TThheerree
+
+function doubleChar(str: string): string {
+    let newStr = "";
+    for (let i = 0; i < str.length; i++) {
+        newStr += str[i] + str[i];
+    }
+    return newStr;
+}
+
+//-------------------------------------------------------------
