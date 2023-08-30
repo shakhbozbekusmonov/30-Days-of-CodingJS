@@ -37,4 +37,23 @@ function withoutX(str) {
     return str;
 }
 //-------------------------------------------------------------------------------
+// withoutX2('xHi') → Hi
+// withoutX2('Hxi') → Hi
+// withoutX2('Hi') → Hi
+function withoutX2(str) {
+    let newStr = "";
+    if (str.startsWith("x") && str.startsWith("x", 1)) {
+        newStr += str.slice(2);
+    }
+    else if (str.startsWith("x") && !str.startsWith("x", 1)) {
+        newStr += str.slice(1);
+    }
+    else if (!str.startsWith("x") && str.startsWith("x", 1)) {
+        newStr += str.slice(0, 1) + str.slice(2);
+    }
+    else {
+        newStr += str;
+    }
+    return newStr;
+}
 //# sourceMappingURL=index.js.map
