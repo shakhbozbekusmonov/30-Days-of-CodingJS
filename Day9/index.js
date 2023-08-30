@@ -24,4 +24,17 @@ function startWord(str, word) {
         : "";
 }
 //---------------------------------------------------------------
+// withoutX('xHix') → Hi
+// withoutX('xHi') → Hi
+// withoutX('Hxix') → Hxi
+function withoutX(str) {
+    if (str.startsWith("x") && !str.endsWith("x"))
+        return str.slice(1);
+    if (!str.startsWith("x") && str.endsWith("x"))
+        return str.slice(0, -1);
+    if (str.startsWith("x") && str.endsWith("x"))
+        return str.slice(1, -1);
+    return str;
+}
+//-------------------------------------------------------------------------------
 //# sourceMappingURL=index.js.map
