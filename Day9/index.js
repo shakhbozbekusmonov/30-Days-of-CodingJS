@@ -15,4 +15,13 @@ function deFront(str) {
     return newStr;
 }
 //----------------------------------------------------------------
+// startWord('hippo', 'hi') → hi
+// startWord('hippo', 'xip') → hip
+// startWord('hippo', 'i') → h
+function startWord(str, word) {
+    return str.slice(1, word.length) === word.slice(1)
+        ? str.slice(0, 1) + word.slice(1)
+        : "";
+}
+//---------------------------------------------------------------
 //# sourceMappingURL=index.js.map

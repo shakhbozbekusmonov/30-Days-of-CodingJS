@@ -16,3 +16,15 @@ function deFront(str: string): string {
 }
 
 //----------------------------------------------------------------
+
+// startWord('hippo', 'hi') → hi
+// startWord('hippo', 'xip') → hip
+// startWord('hippo', 'i') → h
+
+function startWord(str: string, word: string): string {
+    return str.slice(1, word.length) === word.slice(1)
+        ? str.slice(0, 1) + word.slice(1)
+        : "";
+}
+
+//---------------------------------------------------------------
