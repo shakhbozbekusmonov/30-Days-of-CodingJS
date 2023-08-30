@@ -100,4 +100,21 @@ function catDog(str) {
     return catCount === dogCount;
 }
 //---------------------------------------------------------------------
+// countCode('aaacodebbb') → 1
+// countCode('codexxcode') → 2
+// countCode('cozexxcope') → 2
+// function countCode(str: string): number {
+//     let count = 0;
+//     for (let i = 0; i < str.length; i++) {
+//         if (str.slice(i, i + 2) === "co" && str.slice(i + 3, i + 4) === "e")
+//             count++;
+//     }
+//     return count;
+// }
+function countCode(str) {
+    let pattern = /co[a-z]e/g;
+    let matches = [...str.matchAll(pattern)];
+    return matches.length;
+}
+//-------------------- END --------------------
 //# sourceMappingURL=index.js.map
