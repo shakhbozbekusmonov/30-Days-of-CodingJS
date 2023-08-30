@@ -74,11 +74,30 @@ function doubleChar(str) {
 function countHi(str) {
     let count = 0;
     for (let i = 0; i < str.length; i++) {
-        if (str[i] === "h" && str[i + 1] === "i") {
+        if (str.charAt(i) === "h" && str.charAt(i + 1) === "i") {
             count++;
         }
     }
     return count;
 }
 //-------------------------------------------------------------
+// catDog('catdog') → true
+// catDog('catcat') → false
+// catDog('1cat1cadodog') → true
+function catDog(str) {
+    let catCount = 0;
+    let dogCount = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str.charAt(i) === "c" &&
+            str.charAt(i + 1) === "a" &&
+            str.charAt(i + 2) === "t")
+            catCount++;
+        if (str.charAt(i) === "d" &&
+            str.charAt(i + 1) === "o" &&
+            str.charAt(i + 2) === "g")
+            dogCount++;
+    }
+    return catCount === dogCount;
+}
+//---------------------------------------------------------------------
 //# sourceMappingURL=index.js.map
