@@ -83,4 +83,11 @@ function mixString(a, b) {
     return newStr;
 }
 //-------------------------------------------------------------------
+// repeatEnd('Hello', 3) → llollollo
+// repeatEnd('Hello', 2) → lolo
+// repeatEnd('Hello', 1) → o
+function repeatEnd(str, n) {
+    return str.slice(-n).repeat(n);
+}
+//-------------------------------------------------------------------
 //# sourceMappingURL=index.js.map

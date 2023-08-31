@@ -101,3 +101,14 @@ function mixString(a: string, b: string): string {
 }
 
 //-------------------------------------------------------------------
+
+// repeatEnd('Hello', 3) → llollollo
+// repeatEnd('Hello', 2) → lolo
+// repeatEnd('Hello', 1) → o
+
+function repeatEnd(str: string, n: number): string {
+    return str.slice(-n).repeat(n);
+}
+
+//-------------------------------------------------------------------
+
