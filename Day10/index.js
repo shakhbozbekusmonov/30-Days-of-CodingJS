@@ -15,4 +15,20 @@ function endOther(a, b) {
     return a.toLowerCase() === b.toLowerCase();
 }
 //----------------------------------------------------------------
+// xyzThere('abcxyz') → true
+// xyzThere('abc.xyz') → false
+// xyzThere('xyz.abc') → true
+function xyzThere(str) {
+    if (str.length > 3) {
+        for (let i = 0; i < str.length; i++) {
+            if (str.charAt(i) !== "." &&
+                str.charAt(i + 1) === "x" &&
+                str.charAt(i + 2) === "y" &&
+                str.charAt(i + 3) === "z")
+                return true;
+        }
+    }
+    return str.startsWith("xyz") || false;
+}
+//-----------------------------------------------------------
 //# sourceMappingURL=index.js.map
