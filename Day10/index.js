@@ -115,4 +115,12 @@ function repeatSeparator(word, sep, count) {
     return newStr;
 }
 //----------------------------------------------------------------
+// prefixAgain('abXYabc', 1) → true
+// prefixAgain('abXYabc', 2) → true
+// prefixAgain('abXYabc', 3) → false
+function prefixAgain(str, n) {
+    let prefixStr = str.slice(0, n);
+    return str.slice(n).includes(prefixStr);
+}
+//--------------------------------------------------------------
 //# sourceMappingURL=index.js.map

@@ -141,3 +141,14 @@ function repeatSeparator(word: string, sep: string, count: number): string {
 }
 
 //----------------------------------------------------------------
+
+// prefixAgain('abXYabc', 1) → true
+// prefixAgain('abXYabc', 2) → true
+// prefixAgain('abXYabc', 3) → false
+
+function prefixAgain(str: string, n: number): boolean {
+    let prefixStr: string = str.slice(0, n);
+    return str.slice(n).includes(prefixStr);
+}
+
+//--------------------------------------------------------------
