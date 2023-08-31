@@ -53,3 +53,31 @@ function bobThere(str: string): boolean {
 }
 
 //------------------------------------------------------------
+
+// xyBalance('aaxbby') → true
+// xyBalance('aaxbb') → false
+// xyBalance('yaaxbb') → false
+
+function xyBalance(str: string): boolean {
+    let x = false;
+    let y = false;
+    for (let i = 0; i < str.length; i++) {
+        if (str.charAt(i) == "x" && y == true) {
+            x = true;
+            y = false;
+        } else if (str.charAt(i) == "x") {
+            x = true;
+        }
+        if (str.charAt(i) == "y" && x == true) y = true;
+    }
+    if (x == false) y = true;
+    return y;
+}
+
+// function xyBalance(str: string): boolean {
+// return (
+// str.indexOf("x") === -1 || str.lastIndexOf("x") < str.lastIndexOf("y")
+// );
+// }
+
+//-----------------------------------------------------------------
