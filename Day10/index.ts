@@ -81,3 +81,23 @@ function xyBalance(str: string): boolean {
 // }
 
 //-----------------------------------------------------------------
+
+// mixString('abc', 'xyz') → axbycz
+// mixString('Hi', 'There') → HTihere
+// mixString('xxxx', 'There') → xTxhxexre
+
+function mixString(a: string, b: string): string {
+    let newStr: string = "";
+    if (a.length > b.length) {
+        for (let i = 0; i < a.length; i++) {
+            newStr += a.charAt(i) + b.charAt(i);
+        }
+    } else {
+        for (let i = 0; i < b.length; i++) {
+            newStr += a.charAt(i) + b.charAt(i);
+        }
+    }
+    return newStr;
+}
+
+//-------------------------------------------------------------------
