@@ -101,4 +101,18 @@ function repeatFront(str, n) {
     return newStr;
 }
 //-------------------------------------------------------------------
+// repeatSeparator('Word', 'X', 3) → WordXWordXWord
+// repeatSeparator('This', 'And', 2) → ThisAndThis
+// repeatSeparator('This', 'And', 1) → This
+function repeatSeparator(word, sep, count) {
+    let newStr = "";
+    for (let i = 0; i < count; i++) {
+        newStr += word;
+        newStr += sep;
+    }
+    if (sep.length > 0)
+        newStr = newStr.slice(0, -sep.length);
+    return newStr;
+}
+//----------------------------------------------------------------
 //# sourceMappingURL=index.js.map
