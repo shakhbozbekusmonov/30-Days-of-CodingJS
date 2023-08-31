@@ -123,4 +123,19 @@ function prefixAgain(str, n) {
     return str.slice(n).includes(prefixStr);
 }
 //--------------------------------------------------------------
+// xyzMiddle('AAxyzBB') → true
+// xyzMiddle('AxyzBB') → true
+// xyzMiddle('AxyzBBB') → false
+function xyzMiddle(str) {
+    if (str.length % 2 !== 0) {
+        if (str.slice(str.length / 2 - 1, str.length / 2 + 2) === "xyz")
+            return true;
+        return false;
+    }
+    else if (str.slice(str.length / 2 - 1, str.length / 2 + 2) === "xyz" ||
+        str.slice(str.length / 2 - 2, str.length / 2 + 1) === "xyz")
+        return true;
+    return false;
+}
+//--------------------------------------------------------------
 //# sourceMappingURL=index.js.map
