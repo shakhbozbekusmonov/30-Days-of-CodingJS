@@ -171,3 +171,19 @@ function xyzMiddle(str: string): boolean {
 }
 
 //--------------------------------------------------------------
+
+// getSandwich('breadjambread') → jam
+// getSandwich('xxbreadjambreadyy') → jam
+// getSandwich('xxbreadyy') →
+
+function getSandwich(str: string): string {
+    if (str.includes("bread")) {
+        let startBreadIndex = str.indexOf("bread") + "bread".length;
+        let endBreadIndex = str.lastIndexOf("bread");
+        return str.slice(startBreadIndex, endBreadIndex);
+    }
+    return "";
+}
+
+//--------------------------------------------------------------
+

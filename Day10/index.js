@@ -138,4 +138,16 @@ function xyzMiddle(str) {
     return false;
 }
 //--------------------------------------------------------------
+// getSandwich('breadjambread') → jam
+// getSandwich('xxbreadjambreadyy') → jam
+// getSandwich('xxbreadyy') →
+function getSandwich(str) {
+    if (str.includes("bread")) {
+        let startBreadIndex = str.indexOf("bread") + "bread".length;
+        let endBreadIndex = str.lastIndexOf("bread");
+        return str.slice(startBreadIndex, endBreadIndex);
+    }
+    return "";
+}
+//--------------------------------------------------------------
 //# sourceMappingURL=index.js.map
