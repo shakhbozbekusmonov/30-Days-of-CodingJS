@@ -112,3 +112,16 @@ function repeatEnd(str: string, n: number): string {
 
 //-------------------------------------------------------------------
 
+// repeatFront('Chocolate', 4) → ChocChoChC
+// repeatFront('Chocolate', 3) → ChoChC
+// repeatFront('Ice Cream', 2) → IcI
+
+function repeatFront(str: string, n: number): string {
+    let newStr: string = "";
+    for (let i = n; i > 0; i--) {
+        newStr += str.slice(0, i);
+    }
+    return newStr;
+}
+
+//-------------------------------------------------------------------

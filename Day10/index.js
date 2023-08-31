@@ -90,4 +90,15 @@ function repeatEnd(str, n) {
     return str.slice(-n).repeat(n);
 }
 //-------------------------------------------------------------------
+// repeatFront('Chocolate', 4) → ChocChoChC
+// repeatFront('Chocolate', 3) → ChoChC
+// repeatFront('Ice Cream', 2) → IcI
+function repeatFront(str, n) {
+    let newStr = "";
+    for (let i = n; i > 0; i--) {
+        newStr += str.slice(0, i);
+    }
+    return newStr;
+}
+//-------------------------------------------------------------------
 //# sourceMappingURL=index.js.map
