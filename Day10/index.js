@@ -31,4 +31,11 @@ function xyzThere(str) {
     return str.startsWith("xyz") || false;
 }
 //-----------------------------------------------------------
+// bobThere('abcbob') → true
+// bobThere('b9b') → true
+// bobThere('bac') → false
+function bobThere(str) {
+    return str.match(/b[a-z|0-9]b/g) ? true : false;
+}
+//------------------------------------------------------------
 //# sourceMappingURL=index.js.map

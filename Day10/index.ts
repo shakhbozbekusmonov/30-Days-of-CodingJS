@@ -43,3 +43,13 @@ function xyzThere(str: string): boolean {
 }
 
 //-----------------------------------------------------------
+
+// bobThere('abcbob') → true
+// bobThere('b9b') → true
+// bobThere('bac') → false
+
+function bobThere(str: string): boolean {
+    return str.match(/b[a-z|0-9]b/g) ? true : false;
+}
+
+//------------------------------------------------------------
