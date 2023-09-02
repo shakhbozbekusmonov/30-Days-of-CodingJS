@@ -16,3 +16,13 @@ function oneTwo(str: string): string {
 }
 
 //----------------------------------------------------------------
+
+// zipZap('zipXzap') → zpXzp
+// zipZap('zopzop') → zpzp
+// zipZap('zzzopzop') → zzzpzp
+
+function zipZap(str: string): string {
+    return str.replace(/z[a-z|A-Z]p/gi, "zp");
+}
+
+//----------------------------------------------------------------

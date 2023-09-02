@@ -13,4 +13,11 @@ function oneTwo(str) {
     return newStr;
 }
 //----------------------------------------------------------------
+// zipZap('zipXzap') → zpXzp
+// zipZap('zopzop') → zpzp
+// zipZap('zzzopzop') → zzzpzp
+function zipZap(str) {
+    return str.replace(/z[a-z|A-Z]p/gi, "zp");
+}
+//----------------------------------------------------------------
 //# sourceMappingURL=index.js.map
