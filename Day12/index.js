@@ -20,4 +20,23 @@ function zipZap(str) {
     return str.replace(/z[a-z|A-Z]p/gi, "zp");
 }
 //----------------------------------------------------------------
+// starOut('ab*cd') → ad
+// starOut('ab**cd') → ad
+// starOut('sm*eilly') → silly
+function starOut(str) {
+    let newStr = "";
+    for (let i = 0; i < str.length; i++) {
+        if (i === 0 && str.charAt(i) !== "*") {
+            newStr += str.charAt(i);
+        }
+        if (i > 0 && str.charAt(i) !== "*" && str.charAt(i - 1) !== "*") {
+            newStr += str.charAt(i);
+        }
+        if (i > 0 && str.charAt(i) === "*" && str.charAt(i - 1) !== "*") {
+            newStr = newStr.slice(0, -1);
+        }
+    }
+    return newStr;
+}
+//---------------------------------------------------------------
 //# sourceMappingURL=index.js.map
