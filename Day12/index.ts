@@ -32,7 +32,7 @@ function zipZap(str: string): string {
 // starOut('sm*eilly') → silly
 
 function starOut(str: string): string {
-    let newStr = "";
+    let newStr: string = "";
     for (let i = 0; i < str.length; i++) {
         if (i === 0 && str.charAt(i) !== "*") {
             newStr += str.charAt(i);
