@@ -8,8 +8,8 @@
 // plusOut('12xy34xyabcxy', 'xy') → ++xy++xy+++xy
 
 function plusOut(str: string, word: string): string {
-    let newStr = "";
-    let i = 0;
+    let newStr: string = "";
+    let i: number = 0;
     while (i < str.length) {
         if (str.slice(i, i + word.length) === word) {
             newStr += word;
@@ -17,6 +17,22 @@ function plusOut(str: string, word: string): string {
         } else {
             newStr += "+";
             i++;
+        }
+    }
+    return newStr;
+}
+
+//----------------------------------------------------------------
+
+// wordEnds('abcXY123XYijk', 'XY') → c13i
+// wordEnds('XY123XY', 'XY') → 13
+// wordEnds('XY1XY', 'XY') → 11
+
+function wordEnds(str: string, word: string): string {
+    let newStr: string = "";
+    for (let i = 0; i < str.length; i++) {
+        if (str.slice(i, i + word.length) === word) {
+            newStr += str.charAt(i - 1) + str.charAt(i + word.length);
         }
     }
     return newStr;

@@ -21,4 +21,17 @@ function plusOut(str, word) {
     return newStr;
 }
 //----------------------------------------------------------------
+// wordEnds('abcXY123XYijk', 'XY') → c13i
+// wordEnds('XY123XY', 'XY') → 13
+// wordEnds('XY1XY', 'XY') → 11
+function wordEnds(str, word) {
+    let newStr = "";
+    for (let i = 0; i < str.length; i++) {
+        if (str.slice(i, i + word.length) === word) {
+            newStr += str.charAt(i - 1) + str.charAt(i + word.length);
+        }
+    }
+    return newStr;
+}
+//----------------------------------------------------------------
 //# sourceMappingURL=index.js.map
