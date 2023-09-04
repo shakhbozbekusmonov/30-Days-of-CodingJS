@@ -98,4 +98,16 @@ function mirrorEnds(string) {
     return newStr;
 }
 //-------------------------------------------------------------------
+// maxBlock('hoopla') → 2
+// maxBlock('abbCCCddBBBxx') → 3
+// maxBlock('') → 0
+function maxBlock(str) {
+    const matches = str.match(/(.)\1*/g);
+    if (!matches) {
+        return 0;
+    }
+    const maxLength = Math.max(...matches.map((match) => match.length));
+    return maxLength;
+}
+//-------------------------------------------------------------------
 //# sourceMappingURL=index.js.map

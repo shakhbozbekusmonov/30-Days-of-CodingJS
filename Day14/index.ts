@@ -118,3 +118,21 @@ function mirrorEnds(string: string): string {
 }
 
 //-------------------------------------------------------------------
+
+// maxBlock('hoopla') → 2
+// maxBlock('abbCCCddBBBxx') → 3
+// maxBlock('') → 0
+
+function maxBlock(str: string): number {
+    const matches: RegExpMatchArray | null = str.match(/(.)\1*/g);
+
+    if (!matches) {
+        return 0;
+    }
+
+    const maxLength: number = Math.max(...matches.map((match) => match.length));
+
+    return maxLength;
+}
+
+//-------------------------------------------------------------------
