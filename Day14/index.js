@@ -55,4 +55,14 @@ function countTriple(str) {
     return count;
 }
 //------------------------------------------------------------------------
+// sumDigits('aa1bc2d3') → 6
+// sumDigits('aa11b33') → 8
+// sumDigits('Chocolate') → 0
+function sumDigits(str) {
+    return str
+        .split("")
+        .filter((item) => !isNaN(Number(item)))
+        .reduce((acc, num) => acc + Number(num), 0);
+}
+//------------------------------------------------------------------------
 //# sourceMappingURL=index.js.map
