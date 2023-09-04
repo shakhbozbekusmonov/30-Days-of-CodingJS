@@ -136,3 +136,18 @@ function maxBlock(str: string): number {
 }
 
 //-------------------------------------------------------------------
+
+// sumNumbers('abc123xyz') → 123
+// sumNumbers('aa11b33') → 44
+// sumNumbers('7 11') → 18
+
+function sumNumbers(str: string): number {
+    let regexp: RegExp = /\d+/g;
+    let sum: number = 0;
+    let matches: RegExpMatchArray | null = str.match(regexp);
+    if (matches) sum = matches.reduce((acc, num) => acc + Number(num), 0);
+
+    return sum;
+}
+
+//------------------------------------------------------------------

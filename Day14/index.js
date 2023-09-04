@@ -110,4 +110,16 @@ function maxBlock(str) {
     return maxLength;
 }
 //-------------------------------------------------------------------
+// sumNumbers('abc123xyz') → 123
+// sumNumbers('aa11b33') → 44
+// sumNumbers('7 11') → 18
+function sumNumbers(str) {
+    let regexp = /\d+/g;
+    let sum = 0;
+    let matches = str.match(regexp);
+    if (matches)
+        sum = matches.reduce((acc, num) => acc + Number(num), 0);
+    return sum;
+}
+//------------------------------------------------------------------
 //# sourceMappingURL=index.js.map
