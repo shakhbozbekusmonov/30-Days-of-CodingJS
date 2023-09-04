@@ -1,6 +1,6 @@
 "use strict";
 // Copyright (c) 2023 author Shakhbozbek Usmonov Miracle Programmer
-// Day 13 CondingJS String 2
+// Day 13 CondingJS String 2 and 3
 // ---------- Started ----------
 // plusOut('12xy34', 'xy') → ++xy++
 // plusOut('12xy34', '1') → 1+++++
@@ -34,4 +34,11 @@ function wordEnds(str, word) {
     return newStr;
 }
 //----------------------------------------------------------------
+// withoutString('Hello there', 'llo') → He there
+// withoutString('Hello there', 'e') → Hllo thr
+// withoutString('Hello there', 'x') → Hello there
+function withoutString(base, remove) {
+    let pattern = new RegExp(remove, "gi");
+    return base.replaceAll(pattern, "");
+}
 //# sourceMappingURL=index.js.map

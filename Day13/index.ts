@@ -1,5 +1,5 @@
 // Copyright (c) 2023 author Shakhbozbek Usmonov Miracle Programmer
-// Day 13 CondingJS String 2
+// Day 13 CondingJS String 2 and 3
 
 // ---------- Started ----------
 
@@ -36,6 +36,35 @@ function wordEnds(str: string, word: string): string {
         }
     }
     return newStr;
+}
+
+//----------------------------------------------------------------
+
+// countYZ('fez day') → 2
+// countYZ('day fez') → 2
+// countYZ('day fyyyz') → 2
+
+function countYZ(str: string): number {
+    let count = 0;
+    const words = str.toLowerCase().split(/[^a-z]+/);
+
+    for (const word of words) {
+        if (word.endsWith("y") || word.endsWith("z")) {
+            count++;
+        }
+    }
+    return count;
+}
+
+//----------------------------------------------------------
+
+// withoutString('Hello there', 'llo') → He there
+// withoutString('Hello there', 'e') → Hllo thr
+// withoutString('Hello there', 'x') → Hello there
+
+function withoutString(base: string, remove: string): string {
+    let pattern = new RegExp(remove, "gi");
+    return base.replaceAll(pattern, "");
 }
 
 //----------------------------------------------------------------
