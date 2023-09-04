@@ -78,4 +78,25 @@ function sumDigits(str: string): number {
         .reduce((acc, num) => acc + Number(num), 0);
 }
 
+// function sumDigits(str: string): number {
+//     let sum = 0;
+//     for (let i = 0; i < str.length; i++) {
+//         if (!isNaN(Number(str.charAt(i)))) {
+//             sum += Number(str.charAt(i));
+//         }
+//     }
+//     return sum;
+// }
+
 //------------------------------------------------------------------------
+
+// sameEnds('abXYab') → true
+// sameEnds('xx') → true
+// sameEnds('xxx') → true
+
+function sameEnds(nums: string, len: number): boolean {
+    return nums.slice(0, len) === nums.slice(-len);
+}
+
+//-----------------------------------------------------------------------
+
