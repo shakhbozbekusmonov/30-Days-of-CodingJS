@@ -100,3 +100,21 @@ function sameEnds(nums: string, len: number): boolean {
 
 //-----------------------------------------------------------------------
 
+// mirrorEnds('abXYZba') → ab
+// mirrorEnds('abca') → a
+// mirrorEnds('aba') → aba
+
+function mirrorEnds(string: string): string {
+    let newStr: string = "";
+    let len: number = string.length;
+    for (let i = 0; i < len; i++) {
+        if (string.charAt(i) === string.charAt(len - 1 - i)) {
+            newStr += string.charAt(i);
+        } else {
+            return newStr;
+        }
+    }
+    return newStr;
+}
+
+//-------------------------------------------------------------------
