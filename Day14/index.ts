@@ -151,3 +151,13 @@ function sumNumbers(str: string): number {
 }
 
 //------------------------------------------------------------------
+
+// notReplace('is test') → is not test
+// notReplace('is-is') → is not-is not
+// notReplace('This is right') → This is not right
+
+function notReplace(str: string): string {
+    return str.replaceAll(/\bis\b/g, "is not");
+}
+
+//------------------------ END ---------------------------

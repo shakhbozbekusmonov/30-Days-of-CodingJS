@@ -122,4 +122,11 @@ function sumNumbers(str) {
     return sum;
 }
 //------------------------------------------------------------------
+// notReplace('is test') → is not test
+// notReplace('is-is') → is not-is not
+// notReplace('This is right') → This is not right
+function notReplace(str) {
+    return str.replaceAll(/\bis\b/g, "is not");
+}
+//------------------------ END ---------------------------
 //# sourceMappingURL=index.js.map
