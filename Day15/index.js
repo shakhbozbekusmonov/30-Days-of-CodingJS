@@ -52,4 +52,12 @@ function caughtSpeeding(speed, isBirthday) {
     }
 }
 //---------------------------------------------------------------
+// sortaSum(3, 4) → 7
+// sortaSum(9, 4) → 20
+// sortaSum(10, 11) → 21
+function sortaSum(a, b) {
+    let sum = a + b;
+    return sum < 10 || sum > 19 ? sum : 20;
+}
+//------------------------ END --------------------------
 //# sourceMappingURL=index.js.map
