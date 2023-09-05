@@ -10,4 +10,22 @@ function cigarParty(cigars, isWeekend) {
         (cigars >= 40 && isWeekend));
 }
 //----------------------------------------------------------------
+// dateFashion(5, 10) → 2
+// dateFashion(5, 2) → 0
+// dateFashion(5, 5) → 1
+function dateFashion(you, date) {
+    // if ((you > 5 && date >= 5) || (you >= 5 && date > 5)) {
+    //     return 2;
+    // } else if (you > 2 && date > 2) {
+    //     return 1;
+    // } else {
+    //     return 0;
+    // }
+    return (you > 5 && date >= 5) || (you >= 5 && date > 5)
+        ? 2
+        : you > 2 && date > 2
+            ? 1
+            : 0;
+}
+//----------------------------------------------------------------
 //# sourceMappingURL=index.js.map
