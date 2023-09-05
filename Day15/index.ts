@@ -50,3 +50,22 @@ function squirrelPlay(temp: number, isSummer: boolean): boolean {
 }
 
 //---------------------------------------------------------------
+
+// caughtSpeeding(60, false) → 0
+// caughtSpeeding(65, false) → 1
+// caughtSpeeding(65, true) → 0
+
+function caughtSpeeding(speed: number, isBirthday: boolean): number {
+    if (
+        (speed >= 61 && speed <= 81 && !isBirthday) ||
+        (speed > 65 && isBirthday)
+    ) {
+        return 1;
+    } else if (speed > 81 && !isBirthday) {
+        return 2;
+    } else {
+        return 0;
+    }
+}
+
+//---------------------------------------------------------------

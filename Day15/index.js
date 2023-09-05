@@ -36,4 +36,20 @@ function squirrelPlay(temp, isSummer) {
         (temp >= 60 && temp <= 100 && isSummer));
 }
 //---------------------------------------------------------------
+// caughtSpeeding(60, false) → 0
+// caughtSpeeding(65, false) → 1
+// caughtSpeeding(65, true) → 0
+function caughtSpeeding(speed, isBirthday) {
+    if ((speed >= 61 && speed <= 81 && !isBirthday) ||
+        (speed > 65 && isBirthday)) {
+        return 1;
+    }
+    else if (speed > 81 && !isBirthday) {
+        return 2;
+    }
+    else {
+        return 0;
+    }
+}
+//---------------------------------------------------------------
 //# sourceMappingURL=index.js.map
