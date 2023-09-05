@@ -28,4 +28,12 @@ function dateFashion(you, date) {
             : 0;
 }
 //----------------------------------------------------------------
+// squirrelPlay(70, false) → true
+// squirrelPlay(95, false) → false
+// squirrelPlay(95, true) → true
+function squirrelPlay(temp, isSummer) {
+    return ((temp >= 60 && temp <= 90 && !isSummer) ||
+        (temp >= 60 && temp <= 100 && isSummer));
+}
+//---------------------------------------------------------------
 //# sourceMappingURL=index.js.map

@@ -37,3 +37,16 @@ function dateFashion(you: number, date: number): number {
 }
 
 //----------------------------------------------------------------
+
+// squirrelPlay(70, false) → true
+// squirrelPlay(95, false) → false
+// squirrelPlay(95, true) → true
+
+function squirrelPlay(temp: number, isSummer: boolean): boolean {
+    return (
+        (temp >= 60 && temp <= 90 && !isSummer) ||
+        (temp >= 60 && temp <= 100 && isSummer)
+    );
+}
+
+//---------------------------------------------------------------
