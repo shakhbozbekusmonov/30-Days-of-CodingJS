@@ -17,4 +17,16 @@ function alarmClock(day, vacation) {
     }
 }
 //----------------------------------------------------------------
+// love6(6, 4) → true
+// love6(4, 5) → false
+// love6(1, 5) → true
+function love6(a, b) {
+    if (a === 6 || b === 6 || a + b === 6 || Math.abs(a - b) === 6) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+//---------------------------------------------------------------
 //# sourceMappingURL=index.js.map

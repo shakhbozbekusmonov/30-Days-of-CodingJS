@@ -18,3 +18,17 @@ function alarmClock(day: number, vacation: boolean): string {
 }
 
 //----------------------------------------------------------------
+
+// love6(6, 4) → true
+// love6(4, 5) → false
+// love6(1, 5) → true
+
+function love6(a: number, b: number): boolean {
+    if (a === 6 || b === 6 || a + b === 6 || Math.abs(a - b) === 6) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+//---------------------------------------------------------------
