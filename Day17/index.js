@@ -33,4 +33,12 @@ function old35(n) {
     return (n % 3 === 0 && n % 5 !== 0) || (n % 5 === 0 && n % 3 !== 0);
 }
 //------------------------------------------------------------
+// less20(18) → true
+// less20(19) → true
+// less20(20) → false
+function less20(n) {
+    let less = Math.abs((n % 20) - 20);
+    return less === 2 || less === 1;
+}
+//------------------------------------------------------------
 //# sourceMappingURL=index.js.map

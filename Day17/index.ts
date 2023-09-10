@@ -47,3 +47,14 @@ function old35(n: number): boolean {
 }
 
 //------------------------------------------------------------
+
+// less20(18) → true
+// less20(19) → true
+// less20(20) → false
+
+function less20(n: number): boolean {
+	let less = Math.abs((n % 20) - 20)
+	return less === 2 || less === 1
+}
+
+//------------------------------------------------------------
