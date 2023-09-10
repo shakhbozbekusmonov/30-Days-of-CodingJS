@@ -19,4 +19,11 @@ function specialEleven(n) {
     return n % 11 === 0 || n % 11 === 1;
 }
 //----------------------------------------------------------------
+// more20(20) → false
+// more20(21) → true
+// more20(22) → true
+function more20(n) {
+    return n % 20 === 1 || n % 20 === 2;
+}
+//------------------------------------------------------------
 //# sourceMappingURL=index.js.map

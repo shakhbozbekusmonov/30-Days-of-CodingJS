@@ -27,3 +27,13 @@ function specialEleven(n: number): boolean {
 }
 
 //----------------------------------------------------------------
+
+// more20(20) → false
+// more20(21) → true
+// more20(22) → true
+
+function more20(n: number): boolean {
+	return n % 20 === 1 || n % 20 === 2
+}
+
+//------------------------------------------------------------
