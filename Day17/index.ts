@@ -3,6 +3,10 @@
 
 // ---------- Started ----------
 
+// in1To10(5, false) → true
+// in1To10(11, false) → false
+// in1To10(11, true) → true
+
 function in1To10(n: number, outsideMode: boolean): boolean {
 	if (
 		(n >= 1 && n <= 10 && !outsideMode) ||
@@ -10,6 +14,16 @@ function in1To10(n: number, outsideMode: boolean): boolean {
 	)
 		return true
 	return false
+}
+
+//----------------------------------------------------------------
+
+// specialEleven(22) → true
+// specialEleven(23) → true
+// specialEleven(24) → false
+
+function specialEleven(n: number): boolean {
+	return n % 11 === 0 || n % 11 === 1
 }
 
 //----------------------------------------------------------------
