@@ -52,3 +52,16 @@ function teaParty(tea: number, candy: number): number {
 }
 
 //---------------------------------------------------------------
+
+// fizzString('fig') → Fizz
+// fizzString('dib') → Buzz
+// fizzString('fib') → FizzBuzz
+
+function fizzString(str: string): string {
+  let newStr = "";
+  if (str.startsWith("f")) newStr += "Fizz";
+  if (str.endsWith("b")) newStr += "Buzz";
+  return newStr || str;
+}
+
+//--------------------------------------------------------------

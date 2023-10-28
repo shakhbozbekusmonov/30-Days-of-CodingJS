@@ -16,4 +16,39 @@ function teenSum(a, b) {
     return (a >= 13 && a <= 19) || (b >= 13 && b <= 19) ? 19 : a + b;
 }
 //----------------------------------------------------------------
+// answerCell(false, false, false) → true
+// answerCell(false, false, true) → false
+// answerCell(true, false, false) → false
+function answerCell(isMorning, isMom, isAsleep) {
+    if (isAsleep)
+        return false;
+    if (isMorning && !isMom)
+        return false;
+    return true;
+}
+//----------------------------------------------------------------
+// teaParty(6, 8) → 1
+// teaParty(3, 8) → 0
+// teaParty(20, 6) → 2
+function teaParty(tea, candy) {
+    if (tea < 5 || candy < 5)
+        return 0;
+    if (tea >= 2 * candy || candy >= 2 * tea)
+        return 2;
+    else
+        return 1;
+}
+//---------------------------------------------------------------
+// fizzString('fig') → Fizz
+// fizzString('dib') → Buzz
+// fizzString('fib') → FizzBuzz
+function fizzString(str) {
+    let newStr = "";
+    if (str.startsWith("f"))
+        newStr += "Fizz";
+    if (str.endsWith("b"))
+        newStr += "Buzz";
+    return newStr || str;
+}
+//--------------------------------------------------------------
 //# sourceMappingURL=index.js.map
