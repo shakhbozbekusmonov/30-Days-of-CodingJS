@@ -8,7 +8,7 @@
 // nearTen(19) → true
 
 function nearTen(num: number): boolean {
-    return num % 10 < 3 || num % 10 >= 8;
+  return num % 10 < 3 || num % 10 >= 8;
 }
 
 //----------------------------------------------------------------
@@ -18,7 +18,25 @@ function nearTen(num: number): boolean {
 // teenSum(13, 2) → 19
 
 function teenSum(a: number, b: number): number {
-    return (a >= 13 && a <= 19) || (b >= 13 && b <= 19) ? 19 : a + b;
+  return (a >= 13 && a <= 19) || (b >= 13 && b <= 19) ? 19 : a + b;
+}
+
+//----------------------------------------------------------------
+
+// answerCell(false, false, false) → true
+// answerCell(false, false, true) → false
+// answerCell(true, false, false) → false
+
+function answerCell(
+  isMorning: boolean,
+  isMom: boolean,
+  isAsleep: boolean
+): boolean {
+  if (isAsleep) return false;
+
+  if (isMorning && !isMom) return false;
+
+  return true;
 }
 
 //----------------------------------------------------------------
