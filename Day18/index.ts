@@ -40,3 +40,15 @@ function answerCell(
 }
 
 //----------------------------------------------------------------
+
+// teaParty(6, 8) → 1
+// teaParty(3, 8) → 0
+// teaParty(20, 6) → 2
+
+function teaParty(tea: number, candy: number): number {
+  if (tea < 5 || candy < 5) return 0;
+  if (tea >= 2 * candy || candy >= 2 * tea) return 2;
+  else return 1;
+}
+
+//---------------------------------------------------------------
